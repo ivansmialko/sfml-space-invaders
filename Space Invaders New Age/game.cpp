@@ -11,6 +11,8 @@ void openFileG(fstream& file, string fileName, int fileMode) {
 	}
 }
 
+
+
 int game() {
 
 	RenderWindow window(sf::VideoMode(900, 650), "Space Invaders: New Age", Style::None);
@@ -52,13 +54,13 @@ int game() {
 	background.sprite.setTexture(background.texture);
 
 	//CURSOR DEFINITION game()
-	CURSOR cursor;
+	GameCursor cursor;
 
 	cursor.texture.loadFromFile("resources/sprites/cursor_game.png");
 	cursor.sprite.setTexture(cursor.texture);
 
 	// PLANE DEFINITION game()
-	PLANE plane;
+	Player plane;
 	plane.texture.loadFromFile("resources/player_plane.png");
 	plane.sprite.setTexture(plane.texture);
 	plane.sprite.setPosition(450, 500);
@@ -111,7 +113,7 @@ int game() {
 
 
 	// BUlLET DEFINITION game()
-	BULLET bullet;
+	Bullet bullet;
 	bullet.texture.loadFromFile("resources/bullet.png");
 	bullet.sprite.setTexture(bullet.texture);
 	bullet.sprite.setScale(float(0.06), float(0.06));
@@ -124,9 +126,9 @@ int game() {
 	bullet.speed = 1;
 	bullet.sprite.setPosition(500, 500);
 
-	BULLET bullet_arr[bullet_am];
+	Bullet bullet_arr[bullet_am];
 
-	BULLET ufo_bullet;
+	Bullet ufo_bullet;
 
 	ufo_bullet.texture.loadFromFile("resources/sprites/ufo_bullet.png");
 	ufo_bullet.sprite.setTexture(ufo_bullet.texture);

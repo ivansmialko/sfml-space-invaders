@@ -1,6 +1,6 @@
 #include "CONSTANTS.h"
 
-int main() {
+int mainOld() {
 
 	srand(time_t(time(0)));
 

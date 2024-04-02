@@ -15,7 +15,7 @@
 using namespace sf;
 using namespace std;
 
-struct CURSOR {
+struct GameCursor {
 	Texture texture;
 	Sprite sprite;
 	float x;
@@ -60,7 +60,7 @@ struct UFO
 	bool spawned;
 };
 
-struct BULLET
+struct Bullet
 {
 	Texture texture;
 	Sprite sprite;
@@ -74,7 +74,7 @@ struct BULLET
 	bool spawned;
 };
 
-struct PLANE
+struct Player
 {
 	Texture texture;
 	Sprite sprite;
@@ -83,14 +83,11 @@ struct PLANE
 	float y;
 };
 
-struct TEXT
+struct TextObject
 {
 	Font font;
 	Text text;
 };
-
-
-
 
 int menu();
 int settin();

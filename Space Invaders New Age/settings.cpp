@@ -52,7 +52,7 @@ int settin() {
 	mouseimg.sprite.setTextureRect(IntRect(0, 0, 100, 100));
 
 
-	CURSOR cursor;
+	GameCursor cursor;
 
 	cursor.texture.loadFromFile("resources/sprites/cursor_game.png");
 	cursor.sprite.setTexture(cursor.texture);

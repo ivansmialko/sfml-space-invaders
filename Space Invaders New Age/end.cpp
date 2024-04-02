@@ -43,7 +43,7 @@ int end() {
 	Vector2i mousePosition; //OBJECT FOR MOUSE COORDINATES
 	window.setMouseCursorVisible(false);	/////  HIDE CURSOR
 
-	CURSOR cursor;
+	GameCursor cursor;
 	cursor.texture.loadFromFile("resources/sprites/cursor_game.png");
 	cursor.sprite.setTexture(cursor.texture);
 
