@@ -132,19 +132,23 @@
     <ClCompile Include="end.cpp" />
     <ClCompile Include="functions.cpp" />
     <ClCompile Include="game.cpp" />
+    <ClCompile Include="GameMain.cpp" />
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="GameScene.cpp" />
     <ClCompile Include="LibTest.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="menu.cpp" />
+    <ClCompile Include="MenuScene.cpp" />
     <ClCompile Include="settings.cpp" />
     <ClCompile Include="ShapeObject.cpp" />
+    <ClCompile Include="SpriteObject.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.h" />
     <ClInclude Include="CONSTANTS.h" />
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="GameScene.h" />
+    <ClInclude Include="MenuScene.h" />
     <ClInclude Include="ShapeObject.h" />
     <ClInclude Include="SpriteObject.h" />
   </ItemGroup>

@@ -29,6 +29,7 @@ private:
 
 public:
 	ShapeObject() {}
+	~ShapeObject();
 
 	void init(EShapeType in_shape_type);
 	void setShapeParam(ECircleShapeParam in_param, double in_value);

@@ -13,12 +13,16 @@ private:
 
 	std::deque<sf::Drawable*> _render_queue;
 	void renderQueue();
+	float getDelta();
 
 public:
 	static Application* getInstance();
 
+	void createWindow(size_t in_width, size_t in_height, std::string& in_window_title);
 	void createWindow(sf::VideoMode& in_video_mode, std::string& in_window_title);
 	void setGameScene(GameScene* in_game_scene) { _game_scene = in_game_scene; }
 	void start();
 	void render(sf::Drawable* in_drawable);
+
+	void logText(std::string& in_text);
 };

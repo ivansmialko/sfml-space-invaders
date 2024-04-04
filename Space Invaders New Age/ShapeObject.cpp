@@ -8,6 +8,14 @@ void ShapeObject::initCircle()
 	_shape = new sf::CircleShape();
 }
 
+ShapeObject::~ShapeObject()
+{
+	if (_shape)
+	{
+		delete _shape;
+	}
+}
+
 void ShapeObject::init(EShapeType in_shape_type)
 {
 	_shape_type = in_shape_type;

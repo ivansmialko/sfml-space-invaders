@@ -1,11 +1,9 @@
-#include <SFML/Graphics.hpp>
 #include "Application.h"
-
-#include "GameScene.h"
+#include "MenuScene.h"
 #include "ShapeObject.h"
 #include "SpriteObject.h"
 
-int mainTest()
+void MenuScene::initialize()
 {
 	ShapeObject* circle_shape_object = new ShapeObject();
 	circle_shape_object->init(ShapeObject::EST_SHAPE_CIRCLE);
@@ -23,13 +21,12 @@ int mainTest()
 
 	SpriteObject* simple_image = new SpriteObject("images.jpg");
 
-	//GameScene* main_game_scene = new GameScene();
-	//main_game_scene->addChild(simple_image);
-	//main_game_scene->addChild(circle_shape_object);
-	//main_game_scene->addChild(circle2);
+	addChild(simple_image);
+	addChild(circle_shape_object);
+	addChild(circle2);
+}
 
-	//Application::getInstance()->setGameScene(main_game_scene);
-	//Application::getInstance()->createWindow(500, 500, std::string("Space Invaders New Age"));
-	//Application::getInstance()->start();
-	return 0;
+void MenuScene::update(float in_dt)
+{
+	
 }
